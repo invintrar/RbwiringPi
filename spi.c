@@ -4,7 +4,7 @@
 #define CHANNEL 0
 
 int main(){
-	unsigned char data_env[30], i, bandera;
+	unsigned char data_env[30], i, j, bandera;
 
 	if(wiringPiSPISetup(0,5000000)== -1){
 		printf("Error\n");
@@ -17,7 +17,7 @@ int main(){
 	printf("%-14s  %-14s\n","Dato Enviado","Dato Recibido");
 
 
-	for(i = 0; i < 30; i++){
+	for(j = 0; j <= 0x1D; j++){
 		if(bandera == 0x0A || bandera == 0x0B || bandera == 0x10){
 			data_env[0] = bandera;
 			//Llenamos la matriz para enviar 
