@@ -13,5 +13,7 @@ Para ver numero de linea en nano
 	Alt + Shift + 3.
 Para compilar en C:
 	gcc -o nombreSalida nombrePrograma.c -lwiringPi
+Para compilar con el archivo MakeFile lo unico que se tiene que hacer es:
+make spi
 
 
