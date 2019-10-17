@@ -15,5 +15,6 @@ Para compilar en C:
 	gcc -o nombreSalida nombrePrograma.c -lwiringPi
 Para compilar con el archivo MakeFile lo unico que se tiene que hacer es:
 make spi
-
+y luego de ejecutar este archivo se ejecuta el archivo output:
+./output
 
