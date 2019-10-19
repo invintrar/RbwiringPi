@@ -1,12 +1,12 @@
 #include <wiringPiSPI.h>
 #include <stdio.h>
 
-#define CHANNEL 0
+#define CHANNEL 1
 
 int main(){
 	unsigned char data_env[30], i, j, bandera;
 
-	if(wiringPiSPISetup(0,5000000)== -1){
+	if(wiringPiSPISetup(CHANNEL,5000000)== -1){
 		printf("Error\n");
 		bandera=30;
 	}else{
