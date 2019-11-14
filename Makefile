@@ -4,11 +4,25 @@ spi:
 	rm output
 interrupcion:
 	gcc -o output interrupcion.c -lwiringPi
-parpadeo:
+	./output
+	rm output
+led:
 	gcc -o output parpadeo.c -lwiringPi
 	./output
 	rm output
 spiprueba:
 	gcc -o output spiSpeed.c -lwiringPi
+	./output
+	rm output
 pruebas:
 	gcc -o output pruebas.c
+	./output
+	rm output
+gps:
+	gcc -o output testgps.c -lwiringPi
+	./output
+	rm output
+gps1:
+	gcc -o output tgps.c -lwiringPi
+	./output
+	rm output

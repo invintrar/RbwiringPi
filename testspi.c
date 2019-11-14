@@ -1,7 +1,7 @@
 #include <wiringPiSPI.h>
 #include <stdio.h>
 
-#define CHANNEL 1
+#define CHANNEL 0
 
 int main(){
 	unsigned char data_env[30], i, j, bandera;
