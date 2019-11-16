@@ -1,3 +1,8 @@
+/**
+*
+*Author: darwinzh
+*
+*/
 #include <wiringPi.h>
 #include <stdio.h>
 #define LED 7

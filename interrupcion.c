@@ -1,3 +1,8 @@
+/**
+*
+*Author: darwinzh
+*
+*/
 #include <stdio.h>
 #include <wiringPi.h>
 

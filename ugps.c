@@ -29,20 +29,15 @@ int main(){
 		return 1;
 	}
 
-	//serialPrintf(serial_port, "PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0");
-	//serialPrintf(serial_port, "PMTK220,1000");
 	while(1){
-
+		/* comprobamos datos esten disponibles */
 		if(serialDataAvail(serial_port)){
 			/* receive character serially */
 			data = serialGetchar(serial_port);
 			printf("%c ", data);
 			fflush(stdout);
 			/* transmit character serially on port */
-			serialPutchar(serial_port, data);
+			//serialPutchar(serial_port, data);
 		}
-		//time(&seconds);
-		//printf("Seconds since January 1, 1970 = %ld\n", seconds);
-		//delay(1000);
 	}
 }

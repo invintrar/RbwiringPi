@@ -1,3 +1,8 @@
+/**
+*
+*Author: darwinzh
+*
+*/
 #include <wiringPiSPI.h>
 #include <stdio.h>
 

@@ -19,11 +19,7 @@ pruebas:
 	./output
 	rm output
 gps:
-	gcc -o output testgps.c -lwiringPi
-	./output
-	rm output
-gps1:
-	gcc -o output tgps.c -lwiringPi
+	gcc -o output ugps.c -lwiringPi
 	./output
 	rm output
 uart:
