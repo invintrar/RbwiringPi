@@ -26,3 +26,7 @@ gps1:
 	gcc -o output tgps.c -lwiringPi
 	./output
 	rm output
+uart:
+	gcc -o output uart.c -lwiringPi
+	./output
+	rm output
