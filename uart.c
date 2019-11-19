@@ -29,8 +29,9 @@ int main(){
 		return 1;
 	}
 
-	//serialPrintf(serial_port, "PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0");
-	//serialPrintf(serial_port, "PMTK220,1000");
+	serialPrintf(serial_port, "PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0");
+	serialPrintf(serial_port, "PMTK220,1000");
+
 	while(1){
 
 		if(serialDataAvail(serial_port)){
